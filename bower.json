@@ -1,0 +1,22 @@
+{
+  "name": "angular-simple-focus",
+  "version": "0.0.1",
+  "homepage": "http://deltreey.github.io/angular-simple-focus/",
+  "authors": [
+    "deltreey <suicidolt@gmail.com>"
+  ],
+  "description": "An attribute to focus an element when it appears and by a value.",
+  "main": "simple-focus.js",
+  "keywords": [
+    "angular-simple-focus",
+    "focus",
+    "simple-focus"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "1.x"
+  }
+}
