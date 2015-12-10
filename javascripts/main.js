@@ -1,6 +1,6 @@
 'use strict';
-var app = angular.module('app', [ 'input-usphone' ]);
+var app = angular.module('app', [ 'simple-focus' ]);
 
 app.controller('MainCtrl', function ($scope) {
-	$scope.number = 5558675309;
+	$scope.stuff = [];
 });
