@@ -4,13 +4,16 @@ angular.module('simple-focus', [])
   .directive('simpleFocus', function ($timeout) {
     return {
       restrict: 'A',
-      link: function(scope, element, attrs) {
-        scope.$watch(attrs.simpleFocus, function() {
+      scope: {
+      	simpleFocus: '='
+      },
+      link: function(scope, element) {
+        scope.$watch('simpleFocus', function() {
           $timeout(function() {
-            var value = scope[attrs.simpleFocus];
+            var value = scope.simpleFocus;
             if(value === true || value === undefined) {
               element[0].focus();
-              scope[attrs.simpleFocus] = false;
+              scope.simpleFocus = false;
             }
           });
         });
